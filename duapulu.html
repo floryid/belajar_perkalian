@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perkalian 11-20</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+     <!-- Header and Navbar -->
+     <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Flory_Id</a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav id="nav-links" class="nav-links">
+                <ul>
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="kontak.html">Contact</a></li>
+                    <li><a href="index.html">Belajar Perkalian</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Perkalian 11-20</h1>
+        <p>Silakan Masukan Angka di bawah ini..!</p>
+        <input type="number" id="numberInput" placeholder="Angka" min="11" max="20">
+        <button onclick="generateTable()">Buatkan Tabel</button>
+        <div id="tableContainer"></div>
+        <a class="btn" href="index.html">Back</a><a class="btn" href="tigapulu.html">Next</a>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>About</h3>
+                    <p>Website Ini di Design Untuk Anak-Anak yang Ingin belajar perkalian  dasar untuk TK atau SD dan di buatkan tabel secara otomatis sesuai kebutuhkan anak-anak</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="kontak.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@flory_id.com</p>
+                    <p>Phone: +123 456 7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Flory_id | Designed by Nofrinto Flory</p>
+            </div>
+        </div>
+    </footer>
+    <script src="duapulu.js"></script>
+</body>
+</html>

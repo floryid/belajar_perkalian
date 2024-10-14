@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Nofrinto Flory</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+       
+        /*header nav */
+
+        /* Navbar Styles */
+header{
+ box-shadow: 0 2px 10px rgba(240, 3, 3, 0.796);
+        }
+.navbar {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(35, 16, 235, 0.796);
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(19, 3, 246, 0.796);
+    background: none;
+    padding: 10px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+/* Menu Icon for Mobile */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #1e1e1e;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links a {
+        padding: 15px;
+        border-bottom: 1px solid #0056b3;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
+}
+.about img{
+    box-shadow: 0 2px 10px rgba(70, 248, 11, 0.796);
+    color: #0c0c0c;
+}
+
+/* background main*/
+
+.about{
+    background-image: url(./images/Untitled\ design.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+        .about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(66, 3, 240, 0.796);
+            margin: 15px;
+        }
+        .about h1 {
+            color: #0c0c0c;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        .about p {
+            color: #fdf9f9;
+            line-height: 1.6;
+            max-width: 800px;
+            text-align: center;
+        }
+        .about-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .about-card {
+            background: #1e1e1e;
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(27, 3, 240, 0.796);
+        }
+        .about-card h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+        .about-card p {
+            font-size: 1em;
+            color: #ccc;
+        }
+
+        footer {
+            background: #1e1e1e;
+            color: #fff;
+            padding: 40px 20px;
+        }
+        .footer-container {
+            box-shadow: 0 2px 10px rgba(240, 3, 3, 0.796);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-section {
+            margin-bottom: 20px;
+            max-width: 300px;
+            box-shadow: 0 2px 10px rgba(58, 3, 240, 0.796);
+        }
+        .footer-section h3 {
+            color: #ffd700;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #bbb;
+            font-size: 0.9em;
+            box-shadow: 0 2px 10px rgba(15, 240, 3, 0.796);
+        }
+       /* @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+            .menu-icon {
+                display: block;
+                cursor: pointer;
+            }
+            
+        }*/
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Flory_id</a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav id="nav-links" class="nav-links">
+                <ul>
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="kontak.html">Contact</a></li>
+                    <li><a href="index.html">Belajar Perkalian</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <div><img style="width: 100px; border-radius: 5px;" src="./images/foto-N2.png" alt=""><p>Nofrinto Flory</p></div>
+        <h1>About</h1>
+        <p>Welcome! I’m Nofrinto Flory, a dedicated web developer passionate about building innovative and responsive websites. I bring a wealth of experience in both frontend and backend development to every project I undertake, aiming to create seamless digital experiences.</p>
+        
+        <div class="about-content">
+            
+            <div class="about-card">
+                <h2>My Mission</h2>
+                <p>Empowering individuals and businesses through creative and efficient web solutions, with a focus on delivering quality and innovation in every line of code.</p>
+            </div>
+            <div class="about-card">
+                <h2>My Vision</h2>
+                <p>To be a recognized web developer, creating impactful online experiences that blend functionality with visual appeal, all while building lasting client relationships.</p>
+            </div>
+            <div class="about-card">
+                <h2>My Journey</h2>
+                <p>Born in Ternate on November 19, 1987, I have grown to become a versatile developer. After years of experience as a supervisor at PT. Intraco Dharma Ekatama, I’ve combined my technical knowledge with practical problem-solving skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Me</h3>
+                <p>I am Nofrinto Flory, a passionate web developer with a vision for creating seamless digital solutions.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="kontak.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Me</h3>
+                <p>Email: nofrinto.flory@example.com</p>
+                <p>Address: Jalan Inggray, Kota Sorong, Papua Barat</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Nofrinto Flory | Designed with passion by Nofrinto Flory</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+}
+
+    </script>
+</body>
+</html>
