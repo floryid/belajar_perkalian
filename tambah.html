@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Penambahan - For Kids</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            /*display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* header navbar */
+
+
+
+/* Navbar Styles */
+
+
+header{
+    display: block;
+    box-shadow: 0 2px 10px rgba(240, 3, 3, 0.796);
+}
+.navbar {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(240, 3, 3, 0.796);
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(19, 3, 246, 0.796);
+    background: none;
+    padding: 10px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(11, 240, 3, 0.796);
+    transition-duration: 0.3s;
+    transition-delay: 0.4s;
+}
+
+/* Menu Icon for Mobile */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #1e1e1e;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        box-shadow: 0 2px 10px rgba(240, 3, 3, 0.847);
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links a {
+        padding: 15px;
+        border-bottom: 1px solid #0056b3;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+        .container {
+            display: block;
+            justify-content: center;
+            justify-items: center;
+            position: center;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        h1 {
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        input[type="number"] {
+            width: 60px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 18px;
+        }
+
+        .btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 20px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            input[type="number"] {
+                width: 50px;
+            }
+
+            .btn {
+                padding: 8px 16px;
+                font-size: 16px;
+            }
+        }
+
+        /* Footer Styles */
+footer {
+    background-color: #333;
+    color: rgb(219, 214, 214);
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(3, 240, 15, 0.796);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 2px 10px rgba(254, 7, 3, 0.796);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+    box-shadow: 0 2px 10px rgba(3, 240, 15, 0.796);
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #ffd700;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 0.9rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #bbb;
+    font-size: 0.9em;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(19, 3, 240, 0.796);
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Flory_Id</a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav id="nav-links" class="nav-links">
+                <ul>
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="kontak.html">Contact</a></li>
+                    <li><a href="index.html">Belajar Perkalian</a></li>
+                    <li><a href="tambah.html">Belajar Penambahan</a></li>
+                    <li><a href="kurang.html">Belajar Pengurangan</a></li>
+                    <li><a href="bagi.html">Belajar Pembagian</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Belajar Penambahan</h1>
+        <p>Masukkan dua angka untuk menjumlahkan:</p>
+        <input type="number" id="number1" placeholder="0" required>
+        <input type="number" id="number2" placeholder="0" required>
+        <button class="btn" onclick="calculate()">Hitung</button>
+        <div class="result" id="result"></div>
+    </div>
+      <!-- Footer -->
+      <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>About</h3>
+                    <p>Website Ini di Design Untuk Anak-Anak yang Ingin belajar perkalian  dasar untuk TK atau SD dan di buatkan tabel secara otomatis sesuai kebutuhkan anak-anak</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="kontak.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@flory_id.com</p>
+                    <p>Phone: +123 456 7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Flory_id | Designed by Nofrinto Flory</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function calculate() {
+            const number1 = parseFloat(document.getElementById('number1').value);
+            const number2 = parseFloat(document.getElementById('number2').value);
+            const sum = number1 + number2;
+
+            if (!isNaN(sum)) {
+                document.getElementById('result').textContent = `Hasil: ${number1} + ${number2} = ${sum}`;
+            } else {
+                document.getElementById('result').textContent = 'Masukkan angka yang benar.';
+            }
+        }
+
+        //navigasi //
+
+function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+}
+
+    </script>
+</body>
+</html>
