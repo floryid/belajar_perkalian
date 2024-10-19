@@ -38,7 +38,7 @@
 }
 
 .nav-links a {
-    color: #fff;
+    color: #f4f0f0;
     text-decoration: none;
     padding: 8px 15px;
     transition: background 0.3s;
@@ -67,6 +67,10 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
     .nav-links {
+        background-image: url(./images/foto-N2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         display: none;
         flex-direction: column;
         background-color: #1e1e1e;
@@ -82,6 +86,7 @@
     }
 
     .nav-links a {
+        color: #0f0e0e;
         padding: 15px;
         border-bottom: 1px solid #0056b3;
     }
@@ -235,10 +240,15 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="service.html">Services</a></li>
                     <li><a href="kontak.html">Contact</a></li>
-                    <li><a href="index.html">Belajar Perkalian</a></li>
-                    <li><a href="tambah.html">Belajar Penambahan</a></li>
-                    <li><a href="kurang.html">Belajar Pengurangan</a></li>
-                    <li><a href="bagi.html">Belajar Pembagian</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Belajar Matematika</button>
+                        <div class="dropdown-content">
+                          <a href="index.html">Belajar Perkalian</a>
+                          <a href="tambah.html">Penambahan</a>
+                          <a href="kurang.html">Pengurangan</a>
+                          <a href="bagi.html">Pembagian</a>
+                        </div>
+                      </div>
                 </ul>
             </nav>
         </div>

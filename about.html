@@ -45,7 +45,7 @@ header{
 }
 
 .nav-links a {
-    color: #fff;
+    color: #fcf8f8;
     text-decoration: none;
     padding: 8px 15px;
     transition: background 0.3s;
@@ -74,6 +74,10 @@ header{
 /* Responsive Styles */
 @media (max-width: 768px) {
     .nav-links {
+        background-image: url(./images/foto-N2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         display: none;
         flex-direction: column;
         background-color: #1e1e1e;
@@ -89,6 +93,7 @@ header{
     }
 
     .nav-links a {
+        color: #111;
         padding: 15px;
         border-bottom: 1px solid #0056b3;
     }
@@ -142,6 +147,7 @@ header{
             text-align: center;
         }
         .about-content {
+            
             display: flex;
             gap: 40px;
             flex-wrap: wrap;
@@ -149,7 +155,11 @@ header{
             margin-top: 40px;
         }
         .about-card {
-            background: #1e1e1e;
+            background-image: url(./images/learn.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            abackground: #1e1e1e;
             color: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -161,11 +171,19 @@ header{
         .about-card h2 {
             font-size: 1.8em;
             margin-bottom: 15px;
-            color: #ffd700;
+            color: #f7ef0a;
+            background: #89b9bc;
+            opacity: 0.6;
+            border-radius: 5px;
+            box-shadow: 1px 1px 10px rgb(11, 241, 30);
         }
         .about-card p {
             font-size: 1em;
-            color: #ccc;
+            color: #f7f5f3;
+            background: #0f0f0f;
+            opacity: 0.6;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px yellow;
         }
 
         footer {
@@ -180,6 +198,9 @@ header{
             flex-wrap: wrap;
         }
         .footer-section {
+            background-image: url(./images/Untitled\ design.png);
+            background-size: cover;
+            background-position: center;
             margin-bottom: 20px;
             max-width: 300px;
             box-shadow: 0 2px 10px rgba(58, 3, 240, 0.796);
@@ -191,7 +212,7 @@ header{
             text-align: center;
             padding: 20px;
             background: #111;
-            color: #bbb;
+            color: #cfcbcb;
             font-size: 0.9em;
             box-shadow: 0 2px 10px rgba(15, 240, 3, 0.796);
         }
@@ -225,10 +246,15 @@ header{
                     <li><a href="about.html">About</a></li>
                     <li><a href="service.html">Services</a></li>
                     <li><a href="kontak.html">Contact</a></li>
-                    <li><a href="index.html">Belajar Perkalian</a></li>
-                    <li><a href="tambah.html">Belajar Penambahan</a></li>
-                    <li><a href="kurang.html">Belajar Pengurangan</a></li>
-                    <li><a href="bagi.html">Belajar Pembagian</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Belajar Matematika</button>
+                        <div class="dropdown-content">
+                          <a href="index.html">Belajar Perkalian</a>
+                          <a href="tambah.html">Penambahan</a>
+                          <a href="kurang.html">Pengurangan</a>
+                          <a href="bagi.html">Pembagian</a>
+                        </div>
+                      </div>
                 </ul>
             </nav>
         </div>
@@ -238,21 +264,21 @@ header{
     <section class="about">
         <div><img style="width: 100px; border-radius: 5px;" src="./images/foto-N2.png" alt=""><p>Nofrinto Flory</p></div>
         <h1>About</h1>
-        <p>Welcome! I’m Nofrinto Flory, a dedicated web developer passionate about building innovative and responsive websites. I bring a wealth of experience in both frontend and backend development to every project I undertake, aiming to create seamless digital experiences.</p>
+        <p>Selamat datang! Saya Nofrinto Flory, seorang pengembang web yang berdedikasi dan bersemangat dalam membangun situs web inovatif dan responsif. Saya membawa banyak pengalaman dalam pengembangan frontend dan backend ke setiap proyek yang saya kerjakan, dengan tujuan menciptakan pengalaman digital yang mulus.</p>
         
         <div class="about-content">
             
             <div class="about-card">
                 <h2>My Mission</h2>
-                <p>Empowering individuals and businesses through creative and efficient web solutions, with a focus on delivering quality and innovation in every line of code.</p>
+                <p>Memberdayakan individu dan bisnis melalui solusi web yang kreatif dan efisien, dengan fokus pada penyampaian kualitas dan inovasi di setiap baris kode</p>
             </div>
             <div class="about-card">
                 <h2>My Vision</h2>
-                <p>To be a recognized web developer, creating impactful online experiences that blend functionality with visual appeal, all while building lasting client relationships.</p>
+                <p>Menjadi pengembang web yang diakui, menciptakan pengalaman online yang berkesan dengan menggabungkan fungsionalitas dan daya tarik visual, sambil membangun hubungan yang langgeng dengan klien.</p>
             </div>
             <div class="about-card">
                 <h2>My Journey</h2>
-                <p>Born in Ternate on November 19, 1987, I have grown to become a versatile developer. After years of experience as a supervisor at PT. Intraco Dharma Ekatama, I’ve combined my technical knowledge with practical problem-solving skills.</p>
+                <p>Lahir di Ternate pada 19 November 1987, saya telah berkembang menjadi seorang pengembang yang serba bisa. Setelah bertahun-tahun berpengalaman sebagai supervisor di PT. Intraco Dharma Ekatama, saya telah menggabungkan pengetahuan teknis dengan keterampilan pemecahan masalah yang praktis.</p>
             </div>
         </div>
     </section>

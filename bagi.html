@@ -113,17 +113,19 @@ header{
 }
 
 .container {
-            display: block;
-            justify-content: center;
-            justify-items: center;
-            position: center;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            text-align: center;
-            width: 100%;
-        }
+    background-image: url(./images/head.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 15px;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(206, 38, 38, 0.792);
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(25, 202, 9, 0.796);
+
+}
         h1 {
             color: #ffd700;
             margin-bottom: 20px;
@@ -159,7 +161,41 @@ header{
             font-weight: bold;
         }
 
-        
+        .dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0e0e0e75;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(243, 15, 15, 0.966);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(12, 238, 246);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
         
         /* Footer Styles */
 footer {
@@ -252,10 +288,15 @@ footer {
                     <li><a href="about.html">About</a></li>
                     <li><a href="service.html">Services</a></li>
                     <li><a href="kontak.html">Contact</a></li>
-                    <li><a href="index.html">Belajar Perkalian</a></li>
-                    <li><a href="tambah.html">Belajar Penambahan</a></li>
-                    <li><a href="kurang.html">Belajar Pengurangan</a></li>
-                    <li><a href="bagi.html">Belajar Pembagian</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Belajar Matematika</button>
+                        <div class="dropdown-content">
+                          <a href="index.html">Belajar Perkalian</a>
+                          <a href="tambah.html">Penambahan</a>
+                          <a href="kurang.html">Pengurangan</a>
+                          <a href="bagi.html">Pembagian</a>
+                        </div>
+                      </div>
                 </ul>
             </nav>
         </div>
